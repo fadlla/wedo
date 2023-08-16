@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/admin_payment_confirmation.css' %}" />
+    <script src="{% static 'js/admin_payment_confirmation.js' %}"></script>
+  </head>
+  <body>
+    <h1>Payment Confirmation</h1>
+    <p>Payment confirmation for inquiry ID: {{ inquiry.id }}</p>
+    <p>Wedding Title: {{ inquiry.Wedding_title }}</p>
+    <p>Payment has been made on the spot.</p>
+    <p>Please update the payment status accordingly.</p>
+
+    <!-- Your additional HTML content or JavaScript code can go here -->
+  </body>
+</html>

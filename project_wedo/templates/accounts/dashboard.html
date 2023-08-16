@@ -1,0 +1,111 @@
+{% extends 'base.html' %} {% block title %}Check Out{% endblock %} {% block content %} {% load humanize %}
+
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+  <div class="container breadcrumb-area">
+    <div class="breadcrumb-areas">
+      <h1>Check out</h1>
+      <ul class="breadcrumbs">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li class="active">{{ user.first_name }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Sub Banner end -->
+<div class="container mt-50 mb-50">
+  {% include 'includes/messages.html' %}
+  <div class="main-title" style="text-align: left !important">
+    <h1>Welcome <span>{{ user.first_name }} {{ user.last_name }}</span></h1>
+    <p>Here are the list of the weddings that you have inquired about:</p>
+  </div>
+  {% if inquiries %}
+  <table class="table table-hover table-bordered table-striped">
+    <thead>
+      <tr>
+        <th scope="col" style="text-align: center">No.</th>
+        <th scope="col" style="text-align: center">Tanggal</th>
+        <th scope="col" style="text-align: center">Paket</th>
+        <th scope="col" style="text-align: center">Harga</th>
+        <th scope="col" style="text-align: center">Alamat</th>
+        <th scope="col" style="text-align: center">Status</th>
+        <th scope="col" style="text-align: center">Action</th>
+        <th scope="col" style="text-align: center">Konsul</th>
+        <th scope="col" style="text-align: center">Pembayaran</th>
+        <th scope="col" style="text-align: center">Keterangan</th>
+        <th scope="col" style="text-align: center">Struk</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for inquiry in inquiries %}
+      <tr>
+        <th scope="row">{{ forloop.counter }}</th>
+        <td>{{ inquiry.Tanggal }}</td>
+        <td>{{ inquiry.Paket }}</td>
+        <td>{{ inquiry.Harga | intcomma }}</td>
+        <td>{{ inquiry.Alamat }}</td>
+        <td>{% if inquiry.Booking %} Tersedia {% else %} Check Booking {% endif %}</td>
+        <td>
+          <a href="{% url 'wedding_detail' inquiry.wedding_id %}" class="btn btn-dark">Lihat</a>
+          <form action="{% url 'dashboard' %}" method="GET" style="display: inline">
+            {% csrf_token %}
+            <input type="hidden" name="inquiry_id" value="{{ inquiry.id }}" />
+          </form>
+        </td>
+        <td>
+          <a
+            href="https://api.whatsapp.com/send?phone=+6287860130305&text=Assalamualaikum.%20Selamat%20siang%20Admin!%0AIzin%20bertanya,%20apakah%20{{ inquiry.Paket }}%20sudah%20tersedia?%20Saya%20ingin%20mengetahui%20ketersediaannya.%20dan%20saya%20ingin%20konsul%20terkait%20paket%20tersebut.%20Terima%20kasih."
+            target="_blank"
+            class="btn btn-primary"
+            >Chat Now</a
+          >
+        </td>
+        <td>
+          {% if not inquiry.Booking %} belum Tersedia {% else %} {% if inquiry.proof_file %}
+          <a href="{{ inquiry.proof_file.url }}" class="btn btn-primary">Lihat Bukti Transfer</a>
+          {% else %} {% if inquiry.Keterangan %}
+          <span class="btn btn-secondary cash-description">Bayar di Tempat</span>
+          {% else %}
+          <a href="{% url 'make_payment' inquiry_id=inquiry.id %}" class="btn btn-success">Transfer</a>
+          {% endif %} {% endif %} {% endif %}
+        </td>
+
+        <td>
+          {% if not inquiry.Booking %}
+          <!-- Tampilkan "-" jika belum disetujui -->
+          - {% else %} {% if inquiry.Valid %} Valid {% else %} Check {% endif %} {% endif %}
+        </td>
+
+        <td>
+          {% if not inquiry.Booking %}
+          <!-- Tampilkan "-" jika belum disetujui -->
+          - {% else %} {% if inquiry.Valid %} {% if inquiry.proof_file %}
+          <a href="{% url 'print_receipt' inquiry_id=inquiry.id %}" target="_blank">Lihat </a>
+          {% else %} - {% endif %} {% else %} takvalid {% endif %} {% endif %}
+        </td>
+
+        <!-- ...kode setelahnya... -->
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>No inquiries found.</p>
+  {% endif %}
+</div>
+<!-- Tambahkan skrip JavaScript di bawah ini -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".cash-button").click(function () {
+      if (confirm("Apakah Anda ingin melakukan pembayaran secara Cash?")) {
+        $(this).hide();
+        $(this).siblings(".btn-success").hide();
+        $(this).siblings(".cash-description").text("Bayar di Tempat");
+        $(this).siblings(".btn-primary").hide();
+        alert("Terima kasih telah melakukan pemesanan. Pembayaran dapat dilakukan di tempat.");
+      }
+    });
+  });
+</script>
+{% endblock %}

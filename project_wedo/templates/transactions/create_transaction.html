@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buat Transaksi Baru</title>
+  </head>
+  <body>
+    <h1>Buat Transaksi Baru</h1>
+    <form method="post">
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit">Buat Transaksi</button>
+    </form>
+  </body>
+</html>

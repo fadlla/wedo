@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daftar Orderan</title>
+  </head>
+  <body>
+    <h1>Daftar Orderan</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Nama Pelanggan</th>
+          <th>Tanggal Pesanan</th>
+          <!-- tambahkan kolom lain sesuai kebutuhan -->
+        </tr>
+      </thead>
+      <tbody>
+        {% for order in orders %}
+        <tr>
+          <td>{{ order.id }}</td>
+          <td>{{ order.customer_name }}</td>
+          <td>{{ order.order_date }}</td>
+          <!-- tambahkan kolom lain sesuai kebutuhan -->
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
+<!-- ...
+<table>
+    <thead>
+        <tr>
+            <!-- kolom lain -->
+            <th>Status Approval</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for order in orders %}
+        <tr>
+            <!-- kolom lain -->
+            <td>{% if order.is_approved %}Disetujui{% else %}Menunggu Approval{% endif %}</td>
+            <td>
+                {% if not order.is_approved %}
+                <a href="{% url 'approve_order' order.id %}">Approve</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<!-- ... -->

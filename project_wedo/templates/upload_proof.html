@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Upload Proof</h1>
+<!-- Form untuk mengunggah bukti pembayaran -->
+<form method="post" action="{% url 'upload_proof' payment_id=payment_id %}" enctype="multipart/form-data">
+  {% csrf_token %}
+  <label for="proof">Upload Proof:</label>
+  <input type="file" name="proof" id="proof" required />
+  <br />
+  <input type="submit" value="Submit" />
+</form>
+{% endblock %}

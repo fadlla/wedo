@@ -1,0 +1,6 @@
+<form action="{% url 'upload_proof' inquiry_id=inquiry_id %}" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <!-- Form fields -->
+  <input type="file" name="payment_proof" />
+  <button type="submit">Upload Proof</button>
+</form>

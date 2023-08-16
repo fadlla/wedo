@@ -1,0 +1,122 @@
+{% load humanize %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Invoice - SIWEDO</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        color: #555;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+      .invoice-info {
+        margin-bottom: 20px;
+      }
+      .invoice-info table {
+        width: 100%;
+      }
+      .invoice-info th,
+      .invoice-info td {
+        padding: 5px;
+      }
+      .invoice-info th {
+        text-align: left;
+        width: 30%;
+      }
+      .invoice-info td {
+        text-align: right;
+        width: 70%;
+      }
+      .invoice-details {
+        margin-bottom: 20px;
+      }
+      .invoice-details table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .invoice-details th,
+      .invoice-details td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      .invoice-details th {
+        background-color: #f2f2f2;
+      }
+      .total-amount {
+        text-align: right;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+        color: #333;
+      }
+      .print-button {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .invoice-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      .invoice-description {
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="invoice-title">Invoice - SIWEDO</h1>
+      <p class="invoice-description">Terima kasih telah memilih SIWEDO sebagai penyedia layanan pernikahan Anda.</p>
+    </div>
+    <div class="invoice-info">
+      <table>
+        <tr>
+          <th>Nomor Invoice</th>
+          <td>{{ inquiry.id }}</td>
+        </tr>
+        <tr>
+          <th>Tanggal Invoice</th>
+          <td>{{ inquiry.Tanggal|date:"d/m/Y" }}</td>
+        </tr>
+        <tr>
+          <th>Nama Pelanggan</th>
+          <td>{{ inquiry.first_name }}</td>
+        </tr>
+        <tr>
+          <th>Alamat</th>
+          <td>{{ inquiry.Alamat }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="invoice-details">
+      <table>
+        <tr>
+          <th>Deskripsi</th>
+          <th>Harga</th>
+        </tr>
+        <tr>
+          <td>{{ inquiry.Paket }}</td>
+          <td>{{ inquiry.Harga|intcomma }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="total-amount">
+      <p>Total Pembayaran: {{ inquiry.Harga|intcomma }}</p>
+    </div>
+    <div class="print-button">
+      <button onclick="window.print()">Cetak Invoice</button>
+    </div>
+  </body>
+</html>

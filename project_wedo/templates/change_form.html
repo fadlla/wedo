@@ -1,0 +1,7 @@
+<div class="form-row">
+  <div class="field-box">
+    {{ field.field }} {% if field.name == 'proof_file' %} {% if field.value %}
+    <a href="{{ field.value.url }}" target="_blank">View Proof</a>
+    {% else %} No proof file uploaded. {% endif %} {% endif %} {{ field.errors }}
+  </div>
+</div>

@@ -1,0 +1,770 @@
+.button-theme {
+  background: #dd686e;
+}
+
+.button-theme:hover {
+  background: #dc141d;
+}
+
+.btn-border {
+  color: #dd686e;
+  border: solid 1px #dd686e;
+}
+
+.pages-404 .btn {
+  background: #dd686e;
+}
+
+.pages-404 .btn:hover {
+  background: #dc141d;
+}
+
+.btn-border:hover {
+  background: #dc141d;
+  border: solid 1px #dc141d;
+}
+
+.blog-2 .b-btn {
+  color: #dd686e;
+}
+
+.vehicles-box .detail h5 {
+  color: #dd686e;
+}
+
+.about-car .best-used-car h3 span {
+  color: #dd686e;
+}
+
+.service-center .about-text h3 span {
+  color: #dd686e;
+}
+
+.service-center ul li i {
+  color: #dd686e;
+}
+
+.service-box ul li i {
+  color: #dd686e;
+}
+
+.shop-info p a {
+  color: #dd686e;
+}
+
+.car-box .facilities-list li span i {
+  color: #dd686e;
+}
+
+.blog-3 .post-meta ul li i {
+  color: #f01520;
+}
+
+.blog-3 .date-box {
+  background: #dd686e;
+}
+
+.blog-3 .date-box::after {
+  border-right: 10px solid #dd686e;
+}
+
+.service-info-2 .icon {
+  color: #dd686e;
+}
+
+.about-slider-box:before {
+  border: 2px solid #dd686e;
+}
+
+.question .contact-info li i {
+  color: #dd686e;
+}
+
+.price-box-2 {
+  color: #dd686e;
+}
+
+.car-box-5 .facilities-list li i {
+  color: #dd686e;
+}
+
+.category-content .new {
+  background: #dd686e;
+}
+
+.category-subtitle {
+  color: #dd686e;
+}
+
+.car-box .footer ul li a:hover {
+  color: #dd686e;
+}
+
+.car-model-2 .ratings-2 span {
+  background: #dd686e;
+}
+
+.car-box-3 .footer ul li a:hover {
+  color: #dd686e;
+}
+
+.overlap-btn:hover {
+  background: #dd686e;
+  border: solid 1px #dd686e;
+}
+
+.overlap-btn.active {
+  border: 1px solid #dd686e !important;
+  background: #dd686e !important;
+  color: #fff;
+}
+
+.car-box-2 .facilities-list li i {
+  color: #dd686e;
+}
+
+.change-view-btn:hover {
+  background: #dd686e;
+  border: solid 1px #dd686e;
+  color: #fff;
+}
+
+.car-model-2 .price-box .del-2 {
+  color: #dd686e;
+}
+
+.change-view-btn {
+  border-radius: 2px;
+  border: solid 1px #dd686e;
+  color: #dd686e;
+}
+
+.active-view-btn {
+  background: #dd686e;
+  border: solid 1px #dd686e;
+  color: #fff;
+}
+
+.sb-5 .search-area-inner {
+  background: #dd686e;
+}
+
+.blog-3 .post-meta ul li i {
+  color: #f01520;
+}
+
+.carousel-indicators .active {
+  background-color: #dd686e;
+}
+
+.navbar-light .navbar-toggler {
+  background: #dd686e;
+}
+
+.banner h4 {
+  color: #dd686e;
+}
+
+.shop-info .price del {
+  color: #dd686e;
+}
+
+.counter-box h1 {
+  color: #dd686e;
+}
+
+.details-banner .cover-buttons ul li a:hover {
+  background: #dd686e;
+}
+
+.text .ratings-box {
+  background: #dd686e;
+}
+
+.dashboard-nav ul {
+  border-bottom: 1px solid #dc141d;
+}
+
+.new-user-box .follow:hover {
+  background: #dd686e;
+  color: #fff;
+}
+
+.setting-button i {
+  color: #dd686e;
+}
+
+#page_scroller {
+  background: #dd686e;
+}
+
+.dashboard-nav {
+  background: #dd686e;
+}
+
+/** Tab box 2 start **/
+.tab-box-2 .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: transparent;
+  border-bottom: solid 2px#dd686e;
+  border-radius: 0;
+  color: #dd686e;
+}
+
+.tab-box .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background: #dd686e;
+}
+
+.pricing-1 .plan-list ul li i {
+  color: #dd686e;
+}
+
+.checkbox-theme input[type="checkbox"]:checked + label::before {
+  border: 2px solid #dd686e;
+}
+
+.average-rating {
+  background: #dd686e;
+}
+
+.rating-width {
+  background: #dd686e;
+}
+
+.heading-car h3 span {
+  color: #dd686e;
+}
+
+.btn-secton .carousel-indicators .active {
+  background-color: #dd686e;
+}
+
+.rating-count span {
+  color: #dd686e;
+}
+
+.filteriz-navigation .active {
+  color: #dd686e;
+}
+
+.main-header .dropdown-menu a:hover {
+  color: #dd686e;
+}
+
+input[type="checkbox"]:checked + label:before {
+  color: #dd686e;
+}
+
+.testimonial-3 .carousel-indicators li.active {
+  background: #dd686e;
+}
+
+.banner-bg-color {
+  background: #dd686e;
+}
+
+.btn-theme {
+  background: #dd686e;
+  border: solid 1px#dd686e;
+}
+
+.featured-car-4 .carousel-indicators li.active {
+  background: #dd686e;
+}
+
+.btn-theme:hover {
+  background: #dc141d;
+  border: solid 1px #dc141d;
+}
+
+.btn-white-lg-outline:hover {
+  color: #fff;
+  background: #dd686e;
+  border: solid 2px#dd686e;
+}
+
+.car-amenities ul li i {
+  color: #dd686e;
+}
+
+.border-button-theme {
+  color: #dd686e;
+  border: 2px solid#dd686e;
+}
+
+.banner h2 span {
+  color: #dd686e;
+}
+
+.car-model-2 .modal-right-content h3 {
+  color: #dd686e;
+}
+
+.testimonial-2 .testimonial-info-box p i {
+  color: #dd686e;
+}
+
+.main-title-2 h1 span {
+  color: #dd686e;
+}
+
+.banner .banner-slider-inner h2 span {
+  color: #dd686e;
+}
+
+.main-title h1 span {
+  color: #dd686e;
+}
+
+.banner-detail-box .white-box .slide-price {
+  color: #dd686e;
+}
+
+.banner-detail-box .white-box .slide-location::after {
+  background-color: #dd686e;
+}
+
+.search-options-btn,
+.search-options-btn:hover {
+  background: #dd686e;
+}
+
+.search-button {
+  background: #dd686e;
+}
+
+.intro-section {
+  background: #dd686e;
+}
+
+.search-button:hover {
+  color: #fff;
+  background: #dc141d;
+}
+
+.pricing-1 .plan-header .plan-price {
+  color: #dd686e;
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+  color: #dd686e;
+}
+
+.bootstrap-select .dropdown-menu > .active > a,
+.bootstrap-select .dropdown-menu > .active > a:focus,
+.bootstrap-select .dropdown-menu > .active > a:hover {
+  color: #dd686e;
+}
+
+.bootstrap-select .dropdown-menu li a:hover .text {
+  color: #dd686e;
+}
+
+.tag {
+  background: #dd686e;
+}
+
+.view-all ul li a:hover {
+  background: #dd686e;
+  color: #fff;
+}
+
+.recent-properties-box .detail header::after {
+  background-color: #dd686e;
+}
+
+footer .footer-item .contact-info li label a:hover {
+  color: #dd686e;
+}
+
+.service-info i {
+  color: #dd686e;
+}
+
+.counter-box-2 .icon {
+  background: #dd686e;
+}
+
+.service-box .heading .title h4 a:hover {
+  color: #dd686e;
+}
+
+.main-header .form-inline .submit {
+  border: solid 1px#dd686e;
+  color: #dd686e;
+}
+
+.main-header .form-inline .submit:hover {
+  border: solid 1px#dd686e;
+  background: #dd686e;
+  color: #fff;
+}
+
+.main-header .navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #dd686e;
+}
+
+.sh-3 .navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #515151;
+}
+
+.banner .banner-slider-inner h1 span {
+  color: #dd686e;
+}
+
+/*.main-header .navbar-expand-lg .navbar-nav .active .nav-link {
+    color:#dd686e !important;
+}*/
+
+.main-header .navbar-expand-lg .user-account li a:hover {
+  color: #dd686e;
+}
+
+.plan .price-header h1 {
+  color: #dd686e;
+}
+
+.btn-outline {
+  border: solid 1px#dd686e;
+  color: #dd686e;
+}
+
+.car-box .footer .price {
+  color: #dd686e;
+}
+
+.btn-outline:hover {
+  border: solid 1px #dc141d;
+  background: #dc141d;
+  color: #fff;
+}
+
+.btn-outline-2 {
+  border: solid 2px#dd686e;
+  color: #dd686e;
+  font-weight: 600;
+}
+
+.heading-car-2 h3 span {
+  color: #dd686e;
+}
+
+.btn-outline-2:hover {
+  border: solid 2px #dc141d;
+  background: #dc141d;
+  color: #fff;
+}
+
+.footer .form-inline .btn {
+  background: #dd686e;
+  color: #fff;
+}
+
+.about-box .detail h3 {
+  color: #dd686e;
+}
+
+.sb-2 {
+  background: #dd686e;
+}
+
+.best-used-car ul li i {
+  color: #dd686e;
+}
+
+.posts-by-category ul li span:hover {
+  color: #dd686e;
+}
+
+li.active.filtr-button.filtr a {
+  color: #dd686e;
+}
+
+.coming-soon-inner h1 span {
+  color: #dd686e;
+}
+
+.filteriz-navigation li a:hover {
+  color: #dd686e;
+}
+
+.sub-banner .page-info .breadcrumb-area ul li a:hover {
+  color: #dd686e;
+}
+
+.show-more-options i {
+  color: #dd686e;
+}
+
+.pagination > li > .active {
+  background: #dd686e;
+}
+
+.pagination > li > a:hover {
+  background: #dd686e;
+  color: #fff;
+}
+
+.contact-section .btn-section .active-bg {
+  color: #dd686e;
+}
+
+.read-more {
+  color: #dd686e;
+}
+
+.blog-3 .detail .post-meta span a i {
+  color: #dd686e;
+}
+
+.range-slider .ui-slider .ui-slider-handle {
+  background: #dd686e;
+}
+
+.our-agent-sidebar .carousel-indicators .active {
+  background: #dd686e;
+}
+
+.range-slider .ui-slider .ui-slider-handle {
+  border: 2px solid#dd686e;
+}
+
+.range-slider .ui-widget-header {
+  background-color: #dd686e;
+}
+
+.main-header .navbar-expand-lg .navbar-nav .link-color {
+  color: #dd686e;
+  border: solid 1px#dd686e;
+}
+
+.main-header .navbar-expand-lg .navbar-nav .link-color:hover {
+  color: #fff;
+  border: solid 1px#dd686e;
+  background: #dd686e;
+}
+
+.posts-by-category ul li a:hover {
+  color: #dd686e;
+}
+
+.tags-box ul li a:hover {
+  color: #fff;
+  border: 1px solid #dd686e;
+  background: #dd686e;
+}
+
+.latest-tweet a {
+  color: #dd686e;
+}
+
+.blog-1 h3 a:hover {
+  color: #dd686e;
+}
+
+.blog-tags a:hover {
+  color: #fff;
+  border: 1px solid #dd686e;
+  background: #dd686e;
+}
+
+.car-box-5 .detail .title a {
+  color: #dd686e;
+}
+
+.price-box-3 {
+  color: #dd686e;
+}
+
+.vs {
+  color: #dd686e;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  color: #dd686e;
+}
+
+.breadcrumbs li a:hover {
+  color: #dd686e;
+}
+
+.helping-center ul li i {
+  color: #dd686e;
+}
+
+.my-account-box .title::after {
+  background-color: #dd686e;
+}
+
+.breadcrumb-nav ul .active {
+  color: #dd686e;
+}
+
+.photoUpload {
+  background: #dd686e;
+}
+
+.typography-page mark.color {
+  background-color: #dd686e;
+}
+
+.faq-accordion .card-header .collapsed.card-title:before {
+  color: #dd686e;
+}
+
+.dashboard-nav ul li span.nav-tag {
+  color: #dd686e;
+}
+
+.comment-content h6 span a {
+  color: #dd686e;
+}
+
+.comment-content h6 span a:hover {
+  color: #dc141d;
+}
+
+.bg-active {
+  background: #dd686e;
+  color: #fff !important;
+}
+
+.banner h3 span {
+  color: #dd686e;
+}
+
+.typography .list-3 li:before,
+.list-2 li:before,
+.list-1 li:before {
+  color: #dd686e;
+}
+
+.numbered.color.filled ol > li::before {
+  border: 1px solid#dd686e;
+  background-color: #dd686e;
+}
+
+.numbered.color ol > li::before {
+  border: 1px solid#dd686e;
+  color: #dd686e;
+}
+
+.widget-link:hover {
+  color: #dd686e;
+}
+
+.coming-soon-inner .btn,
+.coming-soon-inner .btn:hover,
+.coming-soon-inner .btn:active {
+  background: #dd686e;
+}
+
+.car-box-2 .detail .title a {
+  color: #dd686e;
+}
+
+.tabbing-box .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #dd686e;
+}
+
+.tabbing-box .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link:hover {
+  background-color: #dd686e;
+}
+
+.map-marker:hover {
+  background-color: #dd686e;
+  cursor: pointer;
+}
+
+.map-marker:hover:before {
+  border-color: #dd686e transparent transparent transparent;
+}
+
+.map-marker.featured:hover {
+  background-color: #dd686e;
+}
+
+.map-marker.featured:hover:before {
+  border-color: #dd686e transparent transparent transparent;
+}
+
+.map-marker .icon {
+  border: 3px solid#dd686e;
+}
+
+.marker-active .map-marker {
+  background-color: #dd686e;
+}
+
+.marker-active .map-marker:before {
+  border-color: #dd686e transparent transparent transparent;
+}
+
+.slick-arrow-buton:hover {
+  background: #dd686e;
+  color: #fff;
+}
+
+.map-properties .map-content h4 a {
+  color: #dd686e;
+}
+
+.dropzone-design:hover {
+  border: 2px dashed#dd686e;
+}
+
+@media (max-width: 992px) {
+  .main-header .navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #dd686e !important;
+  }
+
+  .car-model-2 .modal-header {
+    background: #dd686e;
+    padding: 20px 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #dd686e;
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:focus,
+  .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #dd686e !important;
+  }
+
+  .main-header .navbar-default .nav > li > a:hover {
+    background: #dd686e;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: #dd686e !important;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    background: #eee;
+  }
+}
+
+@media (min-width: 992px) {
+  /*.header-transparent .navbar-expand-lg .navbar-nav .active .nav-link,
+    .header-transparent .navbar-expand-lg .navbar-nav .nav-link:hover
+    {
+        color: #fff !important;
+    }
+
+    .header-transparent .navbar-expand-lg .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .header-transparent .link-color {
+        color: #fff;
+    }*/
+}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %} {% block title %}Unggah Bukti Pembayaran{% endblock %} {% block content %}
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+  <div class="container breadcrumb-area">
+    <div class="breadcrumb-areas">
+      <h1>Unggah Bukti Pembayaran</h1>
+      <ul class="breadcrumbs">
+        <li><a href="{% url 'home' %}">Beranda</a></li>
+        <li class="active">Unggah Bukti Pembayaran</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="payment-details">
+        <h3>Detail Pembayaran:</h3>
+        <p><strong>Paket Wedding:</strong> {{ inquiry.Paket }}</p>
+        <p><strong>Tanggal Pemasangan:</strong> {{ inquiry.Tanggal }}</p>
+        <p><strong>Alamat:</strong> {{ inquiry.Alamat }}</p>
+        <p><strong>Total Harga:</strong> {{ inquiry.Harga }}</p>
+        <!-- Tampilkan informasi lain yang diperlukan untuk pembayaran -->
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="bank-info">
+        <h3>Informasi Transfer Bank:</h3>
+        <p><i class="bi bi-bank" style="margin-right: 10px"></i> <strong>Nama Bank:</strong> Bank BCA</p>
+        <p><i class="bi bi-credit-card" style="margin-right: 10px"></i> <strong>Nomor Rekening:</strong> 0551641731 an. Lindy Aura Afrilliana</p>
+        <p><i class="bi bi-phone" style="margin-right: 10px"></i> <strong>Nomor Virtual Account:</strong> DANA (08786013030)</p>
+        <!-- Tambahkan informasi bank lainnya yang diperlukan -->
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Kode sebelumnya di atas -->
+
+    <div class="col-md-6">
+      <div class="payment-form">
+        <h3>Upload Struk Pembayaran:</h3>
+        {% if messages %}
+          <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="proof_file">Pilih File</label>
+            <input type="file" name="proof_file" id="proof_file" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+      </div>
+    </div>
+    <!-- Kode selesai -->
+  </div>
+</div>
+{% endblock %}

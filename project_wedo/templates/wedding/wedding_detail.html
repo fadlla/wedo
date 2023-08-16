@@ -1,0 +1,392 @@
+{% extends 'base.html' %} {% block title %} | {{weddingss.Paket}} {% endblock %} {% block content %} {% load static %} {% load humanize %}
+
+<!-- Log on to codeastro.com for more projects -->
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+  <div class="container breadcrumb-area">
+    <div class="breadcrumb-areas">
+      <h1>{{weddingss.Paket}}</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">{{weddingss.Paket}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Sub Banner end -->
+
+<!-- wedding details page start -->
+<div class="car-details-page content-area-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-xs-12">
+        <div class="car-details-section">
+          <!-- Heading start -->
+          <div class="heading-wedding clearfix">
+            {% include 'includes/messages.html' %}
+            <div class="pull-left">
+              <h3>{{weddingss.Paket}}</h3>
+              
+              <h6><i class="flaticon-pin"></i>{{weddingss.kota}}, {{weddingss.provinsi}}</h6>
+             
+            </div>
+            <div class="pull-right">
+              <h3><span>Rp. {{weddingss.Harga | intcomma}}</span></h3>
+            </div>
+          </div>
+          <div id="carDetailsSlider" class="carousel car-details-sliders slide mb-40">
+            <!-- main slider carousel items -->
+            <div class="carousel-inner">
+              <div class="active item carousel-item" data-slide-number="0">
+                <img src="{{weddingss.wedding_photo.url}}" class="img-fluid" alt="slider-wedding" />
+              </div>
+              {% if weddingss.wedding_photo_1 %}
+              <div class="item carousel-item" data-slide-number="1">
+                <img src="{{weddingss.wedding_photo_1.url}}" class="img-fluid" alt="wedding" />
+              </div>
+              {% endif %} {% if weddingss.wedding_photo_2 %}
+              <div class="item carousel-item" data-slide-number="2">
+                <img src="{{weddingss.wedding_photo_2.url}}" class="img-fluid" alt="wedding" />
+              </div>
+              {% endif %} {% if wedding.wedding_photo_3 %}
+              <div class="item carousel-item" data-slide-number="4">
+                <img src="{{weddingss.wedding_photo_3.url}}" class="img-fluid" alt="wedding" />
+              </div>
+              zz {% endif %} {% if wedding.wedding_photo_4 %}
+              <div class="item carousel-item" data-slide-number="5">
+                <img src="{{weddingss.wedding_photo_4.url}}" class="img-fluid" alt="wedding" />
+              </div>
+              {% endif %}
+            </div>
+            <!-- Log on to codeastro.com for more projects -->
+            <!-- main slider carousel nav controls -->
+            <div class="carousel-indicators-section clearfix">
+              <ul class="carousel-indicators car-properties list-inline nav nav-justified">
+                <li class="list-inline-item active">
+                  <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#weddingDetailsSlider">
+                    <img src="{{weddingss.wedding_photo.url}}" class="img-fluid" alt="small-wedding" />
+                  </a>
+                </li>
+                {% if weddingss.wedding_photo_1 %}
+                <li class="list-inline-item">
+                  <a id="carousel-selector-1" data-slide-to="1" data-target="#weddingDetailsSlider">
+                    <img src="{{weddingss.wedding_photo_1.url}}" class="img-fluid" alt="small-wedding" />
+                  </a>
+                </li>
+                {% endif %} {% if weddingss.wedding_photo_2 %}
+                <li class="list-inline-item">
+                  <a id="carousel-selector-2" data-slide-to="2" data-target="#weddingDetailsSlider">
+                    <img src="{{weddingss.wedding_photo_2.url}}" class="img-fluid" alt="small-wedding" />
+                  </a>
+                </li>
+                {% endif %} {% if weddingss.wedding_photo_3 %}
+                <li class="list-inline-item">
+                  <a id="carousel-selector-3" data-slide-to="3" data-target="#weddingDetailsSlider">
+                    <img src="{{weddingss.wedding_photo_3.url}}" class="img-fluid" alt="small-wedding" />
+                  </a>
+                </li>
+                {% endif %} {% if weddingss.wedding_photo_4 %}
+                <li class="list-inline-item">
+                  <a id="carousel-selector-4" data-slide-to="4" data-target="#weddingDetailsSlider">
+                    <img src="{{weddingss.wedding_photo_4.url}}" class="img-fluid" alt="small-wedding" />
+                  </a>
+                </li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+          <!-- Log on to codeastro.com for more projects -->
+          <!-- Tabbing box start -->
+<div class="tabbing tabbing-box mb-40">
+  <ul class="nav nav-tabs" id="wedding" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active show" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="false">Wedding Overview</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="two" aria-selected="false">Catering</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="three" aria-selected="false">MUA & Attire</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="four-tab" data-toggle="tab" href="#four" role="tab" aria-controls="four" aria-selected="false">Dekorasi</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="five-tab" data-toggle="tab" href="#five" role="tab" aria-controls="five" aria-selected="false">Dokumentasi</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="six-tab" data-toggle="tab" href="#six" role="tab" aria-controls="six" aria-selected="false">Wedding Organizer</a>
+    </li>    
+  </ul>
+  <div class="tab-content" id="weddingTabContent">
+    <div class="tab-pane fade active show" id="one" role="tabpanel" aria-labelledby="one-tab">
+      <div class="wedding-description mb-wedding50">
+        <h3 class="heading-2">Description</h3>
+        <p>{{ weddingss.description | safe }}</p>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+      <div class="catering-info mb-50">
+        <h3 class="heading-2">Catering</h3>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <ul>
+              <li>{{ weddingss.catering }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+      <div class="MUA-Attire-info mb-50">
+        <h3 class="heading-2">MUA & Attire</h3>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <ul>
+              <li>{{ weddingss.MUA }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
+      <div class="Dekorasi-info mb-50">
+        <h3 class="heading-2">Dekorasi</h4>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <ul>
+              <li>{{ weddingss.Dekorasi }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="five-tab">
+      <div class="dokumentasi-info mb-50">
+        <h3 class="heading-2">Dokumentasi</h4>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <ul>
+              <li>{{ weddingss.dokumentasi }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="six" role="tabpanel" aria-labelledby="six-tab">
+      <div class="wedding_organizer-info mb-50">
+        <h3 class="heading-2">Wedding Organizer</h4>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <ul>
+              <li>{{ weddingss.wedding_organizer }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>       
+  </div>
+</div>
+
+                <!-- Log on to codeastro.com for more projects -->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="sidebar-right">
+                <!-- Advanced search start -->
+                <div class="widget advanced-search d-none-992">
+                  {% if booking_done %}
+                    <a href="https://api.whatsapp.com/send?phone=+6287860130305&text=Hello%20Admin,%20I%20have%20a%20consultation%20regarding%20my%20booking.%0A%0AKindly%20provide%20me%20with%20further%20information.%0A%0AThank%20you." target="_blank" class="btn btn-primary">Konsultasi dengan Admin</a>
+                  {% else %}
+                    {% if user.is_authenticated %}
+                      <button class="btn btn-danger bomd btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal">Booking Sekarang</button>
+                    {% else %}
+                      <a href="{% url 'login' %}" class="btn btn-danger bomd btn-block btn-lg">Login untuk Booking</a>
+                    {% endif %}
+                  {% endif %}
+                  <br />
+                </div>
+<h3 class="sidebar-title">Paket Wedding</h3>
+<ul>
+  <!-- List of wedding packages -->
+</ul>
+
+                    {% comment %}
+                    <li>
+                      <span><b>Nama Wedding:</b> </span>{{wedding.Wedding_title}}
+                    </li>
+                    {% endcomment %}
+                    <li>
+                      <span><b>durasi acara:</b> </span>{{weddingss.durasi_acara}}
+                    </li>
+                    <li>
+                      <span><b>ceremony:</b> </span>{{weddingss.master_of_ceremony}}
+                    </li>
+                    <li>
+                      <span><b>Harga:</b> </span> Rp.{{weddingss.Harga | intcomma}}
+                    </li>
+                    {% comment %} <li>
+                      <span><b>kondisi:</b> </span>{{wedding.is_availabe}}
+                    </li> {% endcomment %}
+                    <li>
+                      <span><b>di buat:</b> </span>{{weddingss.created_date}}
+                    </li>
+                  </ul>
+                </div>
+
+<!-- Inquiry Modal -->
+<div class="modal fade" id="inquiryModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="contact-dealer modal-header">
+        <center><img src="{% static 'img/pp.png' %}"></center>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {% if booking_done %}
+          <div class="alert alert-success" role="alert">
+            Booking berhasil! Silakan hubungi admin untuk konsultasi lebih lanjut.
+          </div>
+          <a href="https://api.whatsapp.com/send?phone=+6287860130305&text=Hello%20Admin,%20I%20have%20a%20consultation%20regarding%20my%20booking.%0A%0AKindly%20provide%20me%20with%20further%20information.%0A%0AThank%20you." target="_blank" class="btn btn-primary">Konsultasi dengan Admin</a>
+        {% else %}
+          <form action="{% url 'inquiry' %}" method="POST">
+            {% csrf_token %}
+
+            {% if user.is_authenticated %}
+            <input type="hidden" name="user_id" value="{{user.id}}">
+            {% else %}
+            <input type="hidden" name="user_id" value="0">
+            {% endif %}
+
+            <input type="hidden" name="wedding_id" value="{{ weddingss.id }}" />
+
+            <div class="form-group">
+              <label for="name" class="col-form-label">Hello, My Name is</label>
+              <div class="row">
+                <div class="col">
+                  <input type="text" name="first_name" class="form-control" placeholder="First Name" {% if user.is_authenticated %} value="{{user.first_name}}" {% endif %} required />
+                </div>
+                <div class="col">
+                  <input type="text" name="last_name" class="form-control" placeholder="Last Name" {% if user.is_authenticated %} value="{{user.last_name}}" {% endif %} required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name" class="col-form-label">Contact</label>
+              <div class="row">
+                <div class="col">
+                  <input type="tel" name="No_HP" class="form-control" placeholder="+62 8XX-XXXX-xxxx" {% if user.is_authenticated %} value="{{ user.phone_number }}" {% endif %} required pattern="\+[0-9]{2} [0-9]{3}-[0-9]{4}-[0-9]{4}">
+                </div>
+              </div>
+            </div>
+            
+            <script>
+              // Mendapatkan elemen input nomor HP
+              var phoneNumberInput = document.querySelector('input[name="No_HP"]');
+            
+              // Menambahkan event listener untuk memeriksa perubahan pada input nomor HP
+              phoneNumberInput.addEventListener('input', function(e) {
+                // Menghapus semua karakter selain angka
+                var phoneNumber = e.target.value.replace(/\D/g, '');
+            
+                // Mengubah angka 0 pada awal nomor HP menjadi +62
+                if (phoneNumber.startsWith('0')) {
+                  phoneNumber = '+62' + phoneNumber.substr(1);
+                }
+            
+                // Mencocokkan nomor HP dengan pola yang diinginkan
+                var matched = phoneNumber.match(/(\d{2})(\d{3})(\d{4})(\d{4})/);
+            
+                // Jika nomor HP cocok dengan pola yang diinginkan
+                if (matched) {
+                  // Mengatur format nomor HP dengan menggunakan grup yang sesuai
+                  phoneNumber = '+' + matched[1] + ' ' + matched[2] + '-' + matched[3] + '-' + matched[4];
+                }
+            
+                // Mengatur nilai input nomor HP
+                e.target.value = phoneNumber;
+              });
+            </script>
+            
+            
+
+            
+            <label for="name" class="col-form-label">Nama packages</label>
+            <div class="form-group">
+              <input type="text" name="Paket" class="form-control" value="{{ weddingss.Paket }}" readonly />
+            </div>
+            
+            <div class="form-group">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">Harga packages</label>
+                    <input type="text" name="Harga" class="form-control" value="Rp.{{ weddingss.Harga | intcomma }},-" readonly />
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="Tanggal" class="col-form-label">Booking Date</label>
+              <input type="date" name="Tanggal" class="form-control" required />
+            </div>  
+
+            <script>
+              // Mendapatkan elemen input tanggal
+              var dateInput = document.querySelector('input[name="Tanggal"]');
+            
+              // Mendapatkan tanggal hari ini
+              var today = new Date().toISOString().split('T')[0];
+            
+              // Mengatur nilai minimum pada input tanggal ke hari ini
+              dateInput.setAttribute('min', today);
+            </script>
+            
+
+            <div class="form-group">
+              <label for="Alamat" class="col-form-label">Alamat Pemasangan</label>
+              <textarea name="Alamat" class="form-control" placeholder="Tuliskan Alamat Pemasangan"></textarea>
+            </div>
+            
+           
+            <hr />
+            <input type="submit" value="Submit" class="btn btn-block btn-dark" />
+          </form>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Question start -->
+<div class="widget question">
+    <h5 class="sidebar-title">Got Any Question?</h5>
+    <ul class="contact-info">
+        <li>
+            <i class="flaticon-pin"></i>indramayu, Indonesia
+        </li>
+        <li>
+            <i class="flaticon-mail"></i><a href="WOpelangi@gmail.com">WOpelangi@gmail.com</a>
+        </li>
+        <li>
+            <i class="flaticon-phone"></i><a href="tel:+0896-5631-8916">+62 896 5631 8916</a>
+        </li>
+    </ul>
+    <div class="social-list clearfix">
+        <ul>
+            <li><a href="https://facebook/fadlla mbrock partII" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter/fadlla07" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div><!-- Log on to codeastro.com for more projects -->
+{% endblock %}

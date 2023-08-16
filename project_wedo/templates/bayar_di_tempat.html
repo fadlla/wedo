@@ -1,0 +1,2 @@
+def bayar_di_tempat(request, inquiry_id): inquiry = Contact.objects.get(id=inquiry_id) if inquiry.Tersedia: inquiry.Tersedia = False inquiry.keterangan = 'Bayar di Tempat' # Set to 'Bayar di Tempat' when payment will be made on-site
+inquiry.save() messages.success(request, 'Payment will be made on-site. Thank you for your reservation.') return redirect('dashboard') return render(request, 'bayar_di_tempat.html')

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hapus Transaksi</title>
+  </head>
+  <body>
+    <h1>Hapus Transaksi</h1>
+    <h2>Transaksi ID: {{ transaction.id }}</h2>
+    <p>Nama Pelanggan: {{ transaction.customer_name }}</p>
+    <p>Tanggal Transaksi: {{ transaction.transaction_date }}</p>
+    <p>Apakah Anda yakin ingin menghapus transaksi ini?</p>
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit">Hapus</button>
+    </form>
+  </body>
+</html>
